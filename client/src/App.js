@@ -2,10 +2,10 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Header } from './components/common/Header/Header';
-import Week from './components/Week';
-import Login from './components/Login';
-import Landing from './components/Landing';
-import Rega from './components/Rega';
+import { Week } from './components/pages/Week/Week';
+import { Login } from './components/pages/Login/Login';
+import { Landing } from './components/pages/Landing/Landing';
+import { Rega } from './components/pages/Rega/Rega';
 import Day from './components/Day';
 
 function App() {

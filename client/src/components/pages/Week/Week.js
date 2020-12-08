@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Week.css';
-import Day from './Day';
+import './Week.css';
+import Day from '../../Day';
 
-function Week() {
+export const Week = () => {
     return (
         <div className="container">
             <h2>Plan Your Week</h2>
@@ -19,5 +19,3 @@ function Week() {
         </div>
     )
 }
-
-export default Week;
