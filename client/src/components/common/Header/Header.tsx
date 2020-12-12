@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
 import './Header.css';
 
-export function Header() {
+export const Header: React.FunctionComponent = () => {
     return (
         <div className="header">
             <Link to="/">
@@ -20,12 +21,12 @@ export function Header() {
                 </Link>
                 {/* Logout is visible only if user is logged in */}
                 <div className="header__nav__item nav__4">
-                    <i class="fas fa-sign-out-alt"></i>
+                    <i className="fas fa-sign-out-alt"></i>
                     <h4>Logout</h4>
                 </div>
                 {/* Settings and Schedule are visible only if user is logged in */}
                 <div className="header__nav__item nav__2">
-                    <i class="fas fa-cogs"></i>
+                    <i className="fas fa-cogs"></i>
                     <h4>Settings</h4>
                 </div>
                 <div className="header__nav__item nav__3">

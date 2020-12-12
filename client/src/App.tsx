@@ -1,13 +1,12 @@
 import './App.css';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Header } from './components/Header';
-import Week from './components/Week';
-import Login from './components/Login';
-import Landing from './components/Landing';
-import Rega from './components/Rega';
-import Day from './components/Day';
+import { WeekPage } from './components/pages/Week/WeekPage';
+import { Login } from './components/pages/Login/Login';
+import { Landing } from './components/pages/Landing/Landing';
+import { Rega } from './components/pages/Rega/Rega';
 
-function App() {
+export const App:React.FunctionComponent = () => {
   return (
     <Router>
       <div className="App">
@@ -18,19 +17,13 @@ function App() {
           <Rega />
         </Route>
         <Route path="/week">
-          <Header />
-          <Week />
+          {/* <Header /> */}
+          <WeekPage />
         </Route>
         <Route path="/login">
           <Login />
-        </Route>
-        <Route path="/day">
-          <Header />
-          <Day />
         </Route>
       </div>
     </Router>
   );
 }
-
-export default App;
