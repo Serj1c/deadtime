@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 
-export const Login = () => {
+export const Login:React.FunctionComponent = () => {
     return (
         <div className="loginpage">
             <div className="loginpage__container">

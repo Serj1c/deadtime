@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 import './Rega.css';
 
-export const Rega = () => {
+export const Rega:React.FunctionComponent = () => {
     return (
         <div className="rega">
             <div className="rega__container">
