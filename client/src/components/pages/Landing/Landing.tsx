@@ -1,17 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Landing.css';
+import styles from './Landing.module.css';
+import { Buttons } from './Buttons/Buttons';
 
 export const Landing: React.FunctionComponent = () => {
     return (
-        <div>
+        <div className={styles.root}>
             <h1>I am a landing page!</h1>
-            <Link to="/rega">
-                <button>Sign Up</button>
-            </Link>
-            <Link to="/login">
-                <button>Sign In</button>
-            </Link>
+            <Buttons />
         </div> 
     )
 }
