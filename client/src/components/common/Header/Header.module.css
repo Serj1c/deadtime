@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-.header {
+.root {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@
     position: sticky; /* check why it does not work! */
 }
 
-.header__nav {
+.root__navigation {
     display: flex;
     margin-right: 2rem;
     align-items: center;
@@ -18,17 +18,17 @@
     height: fit-content;
 }
 
-.header__nav__item {
+.navigation__item {
     margin-left: 1rem;
     display: flex;
     cursor: pointer;
 }
 
-.header__nav__item:hover {
+.navigation__item:hover {
    border: 1px solid lightgray;
 }
 
-.header__nav__item > h4 {
+.navigation__item > h4 {
     margin-left: 0.5rem;
 }
 
