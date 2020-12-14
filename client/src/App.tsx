@@ -17,7 +17,6 @@ export const App:React.FunctionComponent = () => {
           <Rega />
         </Route>
         <Route path="/week">
-          {/* <Header /> */}
           <WeekPage />
         </Route>
         <Route path="/login">

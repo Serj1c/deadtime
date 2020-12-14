@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid lightgray;
+    position: sticky; /* check why it does not work! */
+}
+
+.root__navigation {
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+}
+
+.navigation__item {
+    margin-left: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.navigation__item:hover {
+   border: 1px solid lightgray;
+}
+
+.navigation__item > h4 {
+    margin-left: 0.5rem;
+}
+
+.header__title {
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+a, a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav__1 {
+    text-decoration: none;
+}
