@@ -1,7 +1,7 @@
 .root {
     padding: 1rem;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    min-width: 100px;
     border-radius: 5px;
     border: none;
     background-color: #fff;
@@ -11,10 +11,4 @@
   .root:hover {
     background: skyblue;
     cursor: pointer;
-  }
-
-  @media (max-width: 768px) {
-    .root {
-      width: 100%;
-    }
   }
