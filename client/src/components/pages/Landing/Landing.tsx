@@ -9,4 +9,3 @@ export const Landing: React.FunctionComponent = () => {
         </div> 
     )
 }
-
