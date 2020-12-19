@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import '../css/Rega.css';
+import './Rega.css';
 
-function Rega() {
+export const Rega:React.FunctionComponent = () => {
     return (
         <div className="rega">
             <div className="rega__container">
@@ -32,6 +32,4 @@ function Rega() {
             </div>
         </div>
     )
-} 
-
-export default Rega;
+}

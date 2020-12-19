@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Week.css';
-import Day from './Day';
+import styles from './Week.module.css';
+import { Day } from './Day/Day';
 
-function Week() {
+
+export const Week:React.FunctionComponent = () => {
+
     return (
-        <div className="container">
-            <h2>Plan Your Week</h2>
-            <div className="week__container">
+        <>
+            <h2 style={{ textAlign: "center"}} >Plan Your Week</h2>
+            <div className={styles.root}>
                 <Day title="Monday"/>
                 <Day title="Tuesday"/>
                 <Day title="Wednesday"/>
@@ -16,8 +17,6 @@ function Week() {
                 <Day title="Saturday"/>
                 <Day title="Sunday"/>
             </div>
-        </div>
+        </>
     )
 }
-
-export default Week;

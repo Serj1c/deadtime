@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Login.css';
+import './Login.css';
 
-function Login() {
+export const Login:React.FunctionComponent = () => {
     return (
         <div className="loginpage">
             <div className="loginpage__container">
@@ -28,6 +28,4 @@ function Login() {
         </div> 
     )
 }
-
-export default Login;
 
