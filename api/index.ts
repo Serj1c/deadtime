@@ -8,6 +8,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('dead timer!')
 })
 
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 });
