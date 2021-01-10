@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+    dead-app:
+        container_name: dead-app
+        image: dead-app:1.0.0
+        stdin_open: true
+        ports:
+            - "3000:3000"
+        networks:
+            - backend
+    dead-api:
+        container_name: dead-api
+        image: dead-api:1.0.0
+        ports:
+            - "3001:3001"
+        networks: 
+            - backend
+        depends_on: 
+            - mongo
+    mongo:
+        container_name: dead-mongo
+        image: mongo:4.0
+        ports:
+            - "27017:27017"
+        networks: 
+            - backend
+networks: 
+    backend:
+        driver: bridge

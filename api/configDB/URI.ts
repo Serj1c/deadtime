@@ -1,4 +1,4 @@
 
 export const mongoURI = {
-    "mongoURI": "localhost:27017"
+    "mongoURI": "mongodb://mongo:27017/dead-api" /* TODO - check additionally */
 }

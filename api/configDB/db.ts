@@ -5,7 +5,7 @@ const uri = config.mongoURI;
 
 mongoose.set('useCreateIndex', true);
 
-const db: Promise<typeof mongoose> = mongoose.connect(uri, {
+const db: Promise<typeof mongoose> = mongoose.connect('mongodb://mongo:27017/dead-api', {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
