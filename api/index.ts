@@ -1,6 +1,5 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
 
 /* Load config */
 dotenv.config({ path: './config/config.env'})
@@ -16,5 +15,5 @@ app.listen(PORT, () => {
 
 app.use(express.json());
 
-/* Database init */
+/* Database connection start */
 connectDB();
