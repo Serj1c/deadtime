@@ -1,0 +1,28 @@
+{
+  "name": "deadtime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.22.0"
+  },
+  "scripts": {
+    "lint": "eslint /app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serj1c/deadtime.git"
+  },
+  "author": "Sergei Isaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Serj1c/deadtime/issues"
+  },
+  "homepage": "https://github.com/Serj1c/deadtime#readme"
+}
