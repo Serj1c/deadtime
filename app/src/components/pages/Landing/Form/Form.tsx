@@ -1,5 +1,5 @@
 import React from 'react';
-import { Buttons } from '../Buttons/Buttons';
+import { Buttons } from '../Buttons';
 import styles from './Form.module.css';
 
 export const Form:React.FunctionComponent = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Landing.module.css';
-import { Form } from './Form/Form';
+import { Form } from './Form';
 
-export const Landing: React.FunctionComponent = () => {
+export const LandingPage: React.FunctionComponent = () => {
     return (
         <div className={styles.root}>
             <Form />

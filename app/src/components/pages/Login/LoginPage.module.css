@@ -1,12 +1,14 @@
-.loginpage {
+.root {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(220,220,220, 0.1);
+
 }
 
-.loginpage__container {
+.container {
     display: flex;
     flex-direction: column;
     width: 30%;
